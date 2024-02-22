@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "KMPXCFramework",
+    name: "shared",
     products: [
         .library(
-            name: "KMPXCFramework",
-            targets: ["KMPXCFramework"]),
+            name: "shared",
+            targets: ["shared"]),
     ],
     targets: [
-        .binaryTarget(name: "KMPXCFramework", path: "./shared.xcframework")
+        .binaryTarget(name: "shared", path: "./shared.xcframework")
     ]
 )
